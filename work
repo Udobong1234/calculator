@@ -1,0 +1,64 @@
+# # # # # # # # # # # # name = input("what is your name: ")
+# # # # # # # # # # # # print(f"hello {name},Good morning")
+# # # # # # # # # # # import math
+# # # # # # # # # # # print(5 ** 3)
+# # # # # # # # # # if 10 > 100:
+# # # # # # # # # #     print("true")
+# # # # # # # # # # else:
+# # # # # # # # # #     print("false")
+# # # # # # # # # x = 5
+# # # # # # # # # y = "Hello, Michael"
+# # # # # # # # # print(x)
+# # # # # # # # # print(y)
+# # # # # # # # name = "Good Morning"
+
+# # # # # # # # def myfunc():
+# # # # # # # #     print("Michael," + name)
+# # # # # # # # myfunc ()
+# # # # # # # import random
+# # # # # # # print(random.randrange(30,90))  
+# # # # # # A = ("bananna","orange")
+# # # # # # for A in "orange":
+# # # # # #  print(A)
+# # # # # txt = "Okon is a boy"  
+# # # # # if "okon" in txt:
+# # # # #  print("yes, 'Okon' is present.") 
+# # # # # else:
+# # # # #  print("no,'Okon' is not present.") 
+# # # B= "michael udobong"  
+# # # print(B.replace("m","j"))
+# # txt = (f"the money you gave me was,{26*5}")
+# # print(txt)
+# txt = ("i am older than my mum")
+# print(txt)==True
+# 'else'
+# print(txt)=='false'
+
+def add (a,b):
+   return a+b
+
+def substract (a,b):
+    return a-b
+
+def divide (a,b):
+    return a/b
+    
+def multiply (a,b):
+     return a*b 
+
+mydict = {
+   '+': add,
+   '-': substract,
+   '*': multiply,
+   '/': divide
+}
+def calculator():
+     num1 = float(input("Enter the first number: "))
+     num2 = float(input("Enter the second number: "))
+     dict = input("Enter the dict(+,-,*,/): ")
+     if dict in mydict:
+        result = mydict[dict](num1,num2)
+        print(f"{num1} {dict} {num2} = {result}")
+     else:
+        print("invalid dict")
+calculator()
